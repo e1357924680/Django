@@ -1,0 +1,14 @@
+@import "/node_modules/bootstrap/scss/functions";
+@import "/node_modules/bootstrap/scss/variables";
+
+$custom-colors: (
+	"blue": $red-400,
+	"blue-subtle": $red-200,
+	"teal": $teal-100,
+	"white": $white,
+	"invisible-gray": $gray-200,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
